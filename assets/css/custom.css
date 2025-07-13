@@ -281,23 +281,52 @@ body#pgDetails {
   background-color: #FAFAFA;
 }
 body#pgDetails .sec-tks__title {
-  font-size: 5.6rem;
+  font-size: 3rem;
   font-weight: 700;
 }
+@media (min-width: 768px) {
+  body#pgDetails .sec-tks__title {
+    font-size: 5.6rem;
+  }
+}
 body#pgDetails .sec-tks__title span {
-  font-size: 5.6rem;
+  font-size: 3.2rem;
   color: #84bc2c;
   font-weight: 700;
 }
+@media (min-width: 768px) {
+  body#pgDetails .sec-tks__title span {
+    font-size: 5.6rem;
+  }
+}
 body#pgDetails .sec-product .table tr td {
-  font-size: 3.2rem;
   font-weight: 700;
 }
-body#pgDetails .sec-product .table tr td span {
-  font-size: 3.2rem;
+@media (min-width: 768px) {
+  body#pgDetails .sec-product .table tr td {
+    font-size: 3.2rem;
+  }
+}
+@media (min-width: 768px) {
+  body#pgDetails .sec-product .table tr td span {
+    font-size: 3.2rem;
+  }
+}
+body#pgDetails .sec-product .table tr td img {
+  width: 100px;
+}
+@media (min-width: 768px) {
+  body#pgDetails .sec-product .table tr td img {
+    width: 200px;
+  }
 }
 body#pgDetails .sec-infos p, body#pgDetails .sec-infos ul li, body#pgDetails .sec-infos span, body#pgDetails .sec-infos a {
-  font-size: 2.4rem;
+  font-size: 2rem;
+}
+@media (min-width: 768px) {
+  body#pgDetails .sec-infos p, body#pgDetails .sec-infos ul li, body#pgDetails .sec-infos span, body#pgDetails .sec-infos a {
+    font-size: 2.4rem;
+  }
 }
 body#pgDetails .sec-infos ul {
   list-style-position: inside;
@@ -307,17 +336,38 @@ body#pgDetails .sec-bonus {
 }
 body#pgDetails .sec-bonus__title {
   font-weight: 700;
-  font-size: 4.8rem;
+  font-size: 3.6rem;
+}
+@media (min-width: 768px) {
+  body#pgDetails .sec-bonus__title {
+    font-size: 4.8rem;
+  }
 }
 body#pgDetails .sec-bonus__title span {
-  font-size: 4.8rem;
-  color: #043418;
+  font-size: 3.6rem;
+}
+@media (min-width: 768px) {
+  body#pgDetails .sec-bonus__title span {
+    font-size: 4.8rem;
+  }
 }
 body#pgDetails .sec-bonus__description {
-  font-size: 3.6rem;
+  font-size: 2.8rem;
+}
+@media (min-width: 768px) {
+  body#pgDetails .sec-bonus__description {
+    font-size: 3.6rem;
+  }
 }
 body#pgDetails .sec-bonus__description span {
-  font-size: 3.6rem;
+  font-size: 2.8rem;
+}
+@media (min-width: 768px) {
+  body#pgDetails .sec-bonus__description span {
+    font-size: 3.6rem;
+  }
+}
+body#pgDetails .sec-bonus__description span:not([data-js-get-session=qtd]) {
   font-style: italic;
 }
 
