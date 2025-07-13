@@ -5,7 +5,9 @@
     const btsBuyNow = document.querySelectorAll('.sec-offers .sec-offers__offer__btn');
 
     btsBuyNow.forEach((bt) => {
-        sessionStorage.setItem('qtd', bt.dataset.JsQtd);
+        bt.addEventListener('click', () => {
+            sessionStorage.setItem('qtd', bt.dataset.jsQtd);
+        });
     });
 
     form.addEventListener('submit', (e) => {
@@ -19,7 +21,6 @@
         sessionStorage.setItem('usermail', fieldEmail);
         sessionStorage.setItem('userphone', fieldPhone);
         
-
         window.location.href = "details.html";
     });
 
