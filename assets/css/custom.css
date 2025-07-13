@@ -199,6 +199,28 @@ html {
     font-size: 3.4rem;
   }
 }
+.sec-faq .accordion .accordion-item {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid #fff;
+  padding: 10px 0;
+}
+.sec-faq .accordion .accordion-item .accordion-button {
+  font-size: 2.4rem;
+  color: #fff;
+  font-weight: 700;
+  background-color: transparent;
+}
+.sec-faq .accordion .accordion-item .accordion-button:not(.collapsed) {
+  box-shadow: unset;
+}
+.sec-faq .accordion .accordion-item .accordion-button::after {
+  filter: brightness(0) invert(1);
+}
+.sec-faq .accordion .accordion-item .accordion-body {
+  color: #fff;
+  font-size: 1.8rem;
+}
 
 .sec-refs {
   background-color: #f9f9f9;
