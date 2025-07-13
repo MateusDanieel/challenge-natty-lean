@@ -41,7 +41,7 @@
         const hiddenSections = document.querySelectorAll('section[hidden]');
         const refsSection = document.querySelector('.sec-refs');
 
-        if (!layoutVisible && video.currentTime >= 12) {
+        if (!layoutVisible && video.currentTime >= 1214) {
             
             hiddenSections.forEach((sec) => {
                 sec.removeAttribute('hidden');
