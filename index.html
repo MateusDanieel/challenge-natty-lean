@@ -647,31 +647,31 @@
         </div>
     </footer>
 
-    <div class="modal fade sec-modal" id="getLeadModal" tabindex="-1" aria-labelledby="getLeadModalLabel" aria-hidden="true">
+    <div class="modal fade" id="getLeadModal" tabindex="-1" aria-labelledby="getLeadModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form method="post" action="">
+                    <form method="post" action="" id="getLeadModalForm">
                         <div class="mb-3">
-                            <label for="field_name" class="form-label">Your name</label>
-                            <input type="text" class="form-control" id="field_name" />
+                            <label for="fieldName" class="form-label">Your name</label>
+                            <input type="text" class="form-control" id="fieldName" required />
                         </div>
 
                         <div class="mb-3">
-                            <label for="field_email" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="field_email" />
+                            <label for="fieldEmail" class="form-label">Your email address</label>
+                            <input type="email" class="form-control" id="fieldEmail" required />
                         </div>
 
                         <div class="mb-3">
-                            <label for="field_phone" class="form-label">Phone number</label>
-                            <input type="tel" class="form-control" id="field_phone" />
+                            <label for="fieldPhone" class="form-label">Your phone number</label>
+                            <input type="tel" class="form-control" id="fieldPhone" required />
                         </div>
 
                         <div class="d-flex justify-content-center">
-                            <button type="submit" class="text-uppercase sec-offers__offer__btn px-5 py-3 mb-4 bg-danger">
+                            <button type="submit" class="text-uppercase sec-offers__offer__btn px-5 py-3 mb-4 bg-danger" id="btBuyNowRoute">
                                 Buy Now
                             </button>
                         </div>
@@ -682,6 +682,7 @@
     </div>
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
