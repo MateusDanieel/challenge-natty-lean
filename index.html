@@ -20,10 +20,15 @@
                 </h1>
 
                 <div class="row">
-                    <div class="col-12">
-                        <video class="sec-video__video" autoplay muted width="100%">
+                    <div class="col-12 position-relative">
+                        <video class="sec-video__video" autoplay muted playsinline width="100%">
                             <source src="assets/video/example.mp4" type="video/mp4">
                         </video>
+
+                        <button class="sec-video__bt text-uppercase" id="unmuteBtn">
+                            <span>&#128266;</span>
+                            Tap to Unmute
+                        </button>
                     </div>
                 </div>
             </div>
@@ -250,7 +255,173 @@
             </div>
         </section>
 
-        <!-- CONTADOR + OFERTAS AQUI -->
+        <section class="sec-counter" hidden>
+            <div class="container pt-5 pb-5">
+                <div class="row">
+                    <div class="col-12 text-white text-center">
+                        <h2 class="sec-counter__title text-uppercase mb-5">
+                            Claim Your Discounted <span>Natty Lean</span>. <br>
+                            Now While Supplies Last!
+                        </h2>
+
+                        <span class="sec-counter__timer">
+                            00:00
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec-offers pt-5" hidden>
+
+            <div class="container pt-5 pb-5">
+
+                <ul class="sec-offers__offer list-unstyled row d-flex flex-wrap justify-content-evenly p-3 p-md-0">
+
+                    <li class="col-sm-12 col-md-3 p-0 mb-3 mb-md-0 order-3 order-md-1">
+                        <h3 class="text-center sec-offers__offer__title mb-3 p-3 text-white">
+                            Basic
+                        </h3>
+
+                        <img src="assets/img/img-2-bottles.webp" alt="2 bottles" class="img-fluid mb-3" />
+
+                        <div class="sec-offers__offer__price-un text-center pb-4 mb-3">
+                            $79
+                            <small class="text-secondary">per bottle</small>
+                        </div>
+
+                        <ul class="sec-offers__offer__lst list-unstyled text-center text-uppercase mb-3">
+
+                            <li class="p-3">
+                                <span>&#10003;</span> 2 bottles
+                            </li>
+
+                            <li class="p-3">
+                                <span>&#10003;</span> 60 Days Supply
+                            </li>
+
+                            <li class="p-3">
+                                <span>&#10003;</span> 60 Days Guarantee
+                            </li>
+
+                            <li class="p-3">
+                                <span>&#10003;</span> 55% OFF
+                            </li>
+                        </ul>
+
+                        <div class="sec-offers__offer__price text-center text-uppercase mb-3">
+                            <strike class="text-secondary">$358 Full</strike>
+                            <strong>$158 Total</strong><br>
+                            +$9.99 Shipping
+                        </div>
+
+                        <div class="d-flex justify-content-center">
+                            <button type="button"
+                                class="text-uppercase sec-offers__offer__btn px-5 py-3 mb-4 bg-secondary" data-js-qtd="2" data-bs-toggle="modal" data-bs-target="#getLeadModal">
+                                BUY NOW
+                            </button>
+                        </div>
+
+
+                    </li>
+
+                    <li class="col-sm-12 col-md-4 p-0 mb-3 mb-md-0 order-1 order-md-2 best">
+                        <h3 class="text-center sec-offers__offer__title mb-3 p-3 text-uppercase">
+                            Best Value!
+                        </h3>
+
+                        <img src="assets/img/img-6-bottles.webp" alt="6 bottles" class="img-fluid mb-3" />
+
+                        <div class="sec-offers__offer__price-un text-center pb-4 mb-3">
+                            $49
+                            <small class="text-white">per bottle</small>
+                        </div>
+
+                        <ul class="sec-offers__offer__lst list-unstyled text-center text-uppercase mb-3">
+
+                            <li class="p-3">
+                                <span>&#10003;</span> 6 bottles
+                            </li>
+
+                            <li class="p-3">
+                                <span>&#10003;</span> 180 Days Supply
+                            </li>
+
+                            <li class="p-3">
+                                <span>&#10003;</span> 60 Days Guarantee
+                            </li>
+
+                            <li class="p-3">
+                                <span>&#10003;</span> 72% OFF
+                            </li>
+                        </ul>
+
+                        <div class="sec-offers__offer__price text-center text-uppercase mb-3 text-white">
+                            <strike class="text-secondary">$1074 Full</strike>
+                            <strong>$294 Total</strong><br>
+                            +<b>FREE</b> Shipping
+                        </div>
+
+                        <div class="d-flex justify-content-center">
+                            <button type="button" class="text-uppercase sec-offers__offer__btn px-5 py-3 mb-4" data-js-qtd="6" data-bs-toggle="modal" data-bs-target="#getLeadModal">
+                                BUY NOW
+                            </button>
+                        </div>
+
+
+                    </li>
+
+                    <li class="col-sm-12 col-md-3 p-0 mb-3 mb-md-0 order-2 order-md-3">
+                        <h3 class="text-center sec-offers__offer__title mb-3 p-3 text-white">
+                            Most Popular
+                        </h3>
+
+                        <img src="assets/img/img-3-bottles.webp" alt="3 bottles" class="img-fluid mb-3" />
+
+                        <div class="sec-offers__offer__price-un text-center pb-4 mb-3">
+                            $69
+                            <small class="text-secondary">per bottle</small>
+                        </div>
+
+                        <ul class="sec-offers__offer__lst list-unstyled text-center text-uppercase mb-3">
+
+                            <li class="p-3">
+                                <span>&#10003;</span> 3 bottles
+                            </li>
+
+                            <li class="p-3">
+                                <span>&#10003;</span> 90 Days Supply
+                            </li>
+
+                            <li class="p-3">
+                                <span>&#10003;</span> 60 Days Guarantee
+                            </li>
+
+                            <li class="p-3">
+                                <span>&#10003;</span> 61% OFF
+                            </li>
+                        </ul>
+
+                        <div class="sec-offers__offer__price text-center text-uppercase mb-3">
+                            <strike class="text-secondary">$537 Full</strike>
+                            <strong>$207 Total</strong><br>
+                            +<b>FREE</b> Shipping
+                        </div>
+
+                        <div class="d-flex justify-content-center">
+                            <button type="button"
+                                class="text-uppercase sec-offers__offer__btn px-5 py-3 mb-4 bg-secondary" data-js-qtd="3" data-bs-toggle="modal" data-bs-target="#getLeadModal">
+                                BUY NOW
+                            </button>
+                        </div>
+
+
+                    </li>
+
+                </ul>
+
+            </div>
+        </section>
 
         <section class="sec-faq" hidden>
             <div class="container pt-5 pb-5">
@@ -388,7 +559,174 @@
             </div>
         </section>
 
-        <!-- OCULTA REFS E ADD CONTADOR + OFERTAS AQUI -->
+        <section class="sec-counter" hidden>
+            <div class="container pt-5 pb-5">
+                <div class="row">
+                    <div class="col-12 text-white text-center">
+                        <h2 class="sec-counter__title text-uppercase mb-5">
+                            Claim Your Discounted <span>Natty Lean</span>. <br>
+                            Now While Supplies Last!
+                        </h2>
+
+                        <span class="sec-counter__timer">
+                            00:00
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec-offers pt-5" hidden>
+
+            <div class="container pt-5 pb-5">
+
+                <ul class="sec-offers__offer list-unstyled row d-flex flex-wrap justify-content-evenly p-3 p-md-0">
+
+                    <li class="col-sm-12 col-md-3 p-0 mb-3 mb-md-0 order-3 order-md-1">
+                        <h3 class="text-center sec-offers__offer__title mb-3 p-3 text-white">
+                            Basic
+                        </h3>
+
+                        <img src="assets/img/img-2-bottles.webp" alt="2 bottles" class="img-fluid mb-3" />
+
+                        <div class="sec-offers__offer__price-un text-center pb-4 mb-3">
+                            $79
+                            <small class="text-secondary">per bottle</small>
+                        </div>
+
+                        <ul class="sec-offers__offer__lst list-unstyled text-center text-uppercase mb-3">
+
+                            <li class="p-3">
+                                <span>&#10003;</span> 2 bottles
+                            </li>
+
+                            <li class="p-3">
+                                <span>&#10003;</span> 60 Days Supply
+                            </li>
+
+                            <li class="p-3">
+                                <span>&#10003;</span> 60 Days Guarantee
+                            </li>
+
+                            <li class="p-3">
+                                <span>&#10003;</span> 55% OFF
+                            </li>
+                        </ul>
+
+                        <div class="sec-offers__offer__price text-center text-uppercase mb-3">
+                            <strike class="text-secondary">$358 Full</strike>
+                            <strong>$158 Total</strong><br>
+                            +$9.99 Shipping
+                        </div>
+
+                        <div class="d-flex justify-content-center">
+                            <button type="button"
+                                class="text-uppercase sec-offers__offer__btn px-5 py-3 mb-4 bg-secondary" data-js-qtd="2" data-bs-toggle="modal" data-bs-target="#getLeadModal">
+                                BUY NOW
+                            </button>
+                        </div>
+
+
+                    </li>
+
+                    <li class="col-sm-12 col-md-4 p-0 mb-3 mb-md-0 order-1 order-md-2 best">
+                        <h3 class="text-center sec-offers__offer__title mb-3 p-3 text-uppercase">
+                            Best Value!
+                        </h3>
+
+                        <img src="assets/img/img-6-bottles.webp" alt="6 bottles" class="img-fluid mb-3" />
+
+                        <div class="sec-offers__offer__price-un text-center pb-4 mb-3">
+                            $49
+                            <small class="text-white">per bottle</small>
+                        </div>
+
+                        <ul class="sec-offers__offer__lst list-unstyled text-center text-uppercase mb-3">
+
+                            <li class="p-3">
+                                <span>&#10003;</span> 6 bottles
+                            </li>
+
+                            <li class="p-3">
+                                <span>&#10003;</span> 180 Days Supply
+                            </li>
+
+                            <li class="p-3">
+                                <span>&#10003;</span> 60 Days Guarantee
+                            </li>
+
+                            <li class="p-3">
+                                <span>&#10003;</span> 72% OFF
+                            </li>
+                        </ul>
+
+                        <div class="sec-offers__offer__price text-center text-uppercase mb-3 text-white">
+                            <strike class="text-secondary">$1074 Full</strike>
+                            <strong>$294 Total</strong><br>
+                            +<b>FREE</b> Shipping
+                        </div>
+
+                        <div class="d-flex justify-content-center">
+                            <button type="button" class="text-uppercase sec-offers__offer__btn px-5 py-3 mb-4" data-js-qtd="6" data-bs-toggle="modal" data-bs-target="#getLeadModal">
+                                BUY NOW
+                            </button>
+                        </div>
+
+
+                    </li>
+
+                    <li class="col-sm-12 col-md-3 p-0 mb-3 mb-md-0 order-2 order-md-3">
+                        <h3 class="text-center sec-offers__offer__title mb-3 p-3 text-white">
+                            Most Popular
+                        </h3>
+
+                        <img src="assets/img/img-3-bottles.webp" alt="3 bottles" class="img-fluid mb-3" />
+
+                        <div class="sec-offers__offer__price-un text-center pb-4 mb-3">
+                            $69
+                            <small class="text-secondary">per bottle</small>
+                        </div>
+
+                        <ul class="sec-offers__offer__lst list-unstyled text-center text-uppercase mb-3">
+
+                            <li class="p-3">
+                                <span>&#10003;</span> 3 bottles
+                            </li>
+
+                            <li class="p-3">
+                                <span>&#10003;</span> 90 Days Supply
+                            </li>
+
+                            <li class="p-3">
+                                <span>&#10003;</span> 60 Days Guarantee
+                            </li>
+
+                            <li class="p-3">
+                                <span>&#10003;</span> 61% OFF
+                            </li>
+                        </ul>
+
+                        <div class="sec-offers__offer__price text-center text-uppercase mb-3">
+                            <strike class="text-secondary">$537 Full</strike>
+                            <strong>$207 Total</strong><br>
+                            +<b>FREE</b> Shipping
+                        </div>
+
+                        <div class="d-flex justify-content-center">
+                            <button type="button"
+                                class="text-uppercase sec-offers__offer__btn px-5 py-3 mb-4 bg-secondary" data-js-qtd="3" data-bs-toggle="modal" data-bs-target="#getLeadModal">
+                                BUY NOW
+                            </button>
+                        </div>
+
+
+                    </li>
+
+                </ul>
+
+            </div>
+        </section>
+        
         <section class="sec-refs">
             <div class="container pt-5 pb-5">
                 <h2 class="sec-refs__title text-center text-uppercase mb-5">

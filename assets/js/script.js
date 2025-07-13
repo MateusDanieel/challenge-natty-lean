@@ -25,3 +25,54 @@
     });
 
 })();
+
+(() => {
+    const video = document.querySelector('.sec-video__video');
+    const unmuteBt = document.getElementById('unmuteBtn');
+
+    let layoutVisible = false;
+
+    unmuteBt.addEventListener('click', () => {
+        video.muted = false;
+        unmuteBt.style.display = 'none';
+    });
+
+    video.addEventListener('timeupdate', () => {
+        const hiddenSections = document.querySelectorAll('section[hidden]');
+        const refsSection = document.querySelector('.sec-refs');
+
+        if (!layoutVisible && video.currentTime >= 12) {
+            
+            hiddenSections.forEach((sec) => {
+                sec.removeAttribute('hidden');
+            });
+
+            refsSection.setAttribute('hidden', '');
+
+            layoutVisible = true;
+
+            startCounter();
+        }
+
+    });
+
+    function startCounter() {
+        let remainingTime = 20 * 60;
+        const counter = document.querySelectorAll('.sec-counter__timer');
+
+        setInterval(() => {
+            const minutes = Math.floor(remainingTime / 60);
+            const seconds = remainingTime % 60;
+
+            counter.forEach((el) => {
+                el.textContent = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+            });
+
+            if (remainingTime > 0) {
+                remainingTime--;
+            };
+        }, 1000);
+    }
+
+    
+})();
