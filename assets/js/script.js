@@ -6,7 +6,8 @@
 
     btsBuyNow.forEach((bt) => {
         bt.addEventListener('click', () => {
-            sessionStorage.setItem('qtd', bt.dataset.jsQtd);
+            sessionStorage.setItem('qtd', bt.dataset.jsQtd); 
+            sessionStorage.setItem('price', bt.dataset.jsPrice); 
         });
     });
 
@@ -74,5 +75,4 @@
         }, 1000);
     }
 
-    
 })();
