@@ -1,0 +1,237 @@
+:root {
+  font-size: 62.5%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1.6rem;
+}
+
+[hidden] {
+  display: block !important;
+}
+
+.sec-video {
+  background-color: #84bc2c;
+}
+@media (min-width: 768px) {
+  .sec-video {
+    min-height: 100vh;
+  }
+}
+.sec-video__title {
+  background-color: rgba(0, 0, 0, 0.25);
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .sec-video__title {
+    font-size: 3.4rem;
+  }
+}
+
+.sec-counter {
+  background-color: #043418;
+  position: relative;
+}
+.sec-counter::before {
+  content: "";
+  display: block;
+  background-color: #043418;
+  border: 3px solid #043418;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  right: 50%;
+  margin: auto;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.sec-counter__title {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .sec-counter__title {
+    font-size: 3.4rem;
+  }
+}
+.sec-counter__title span {
+  font-size: 2.2rem;
+  color: #8c991b;
+}
+@media (min-width: 768px) {
+  .sec-counter__title span {
+    font-size: 3.4rem;
+  }
+}
+.sec-counter__timer {
+  font-size: 3.6rem;
+  font-weight: 700;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 2.5px 25px 7.5px;
+  display: inline-block;
+  border-radius: 10px;
+}
+@media (min-width: 768px) {
+  .sec-counter__timer {
+    font-size: 7.2rem;
+    padding: 5px 50px 15px;
+  }
+}
+
+.sec-offers {
+  background-color: #f0f0f0;
+}
+.sec-offers__offer > li {
+  background-color: #fff;
+  border: 2px solid #9F9F9F;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 1px 1px 10px #9F9F9F;
+}
+.sec-offers__offer > li.best {
+  border-color: #043418;
+  background-color: #043418;
+}
+.sec-offers__offer > li.best .sec-offers__offer__title {
+  background-color: #fff;
+  color: #043418;
+  font-weight: 700;
+}
+.sec-offers__offer > li.best .sec-offers__offer__price-un {
+  color: #fff;
+}
+.sec-offers__offer > li.best .sec-offers__offer__lst li {
+  border-color: #fff;
+  color: #fff;
+}
+.sec-offers__offer > li.best .sec-offers__offer__lst li span {
+  color: #fff;
+}
+.sec-offers__offer > li.best .sec-offers__offer__btn {
+  background-color: #84bc2c;
+}
+.sec-offers__offer__title {
+  font-size: 2.4rem;
+  font-weight: 400;
+  background-color: #9F9F9F;
+}
+.sec-offers__offer__title span {
+  font-size: 1.6rem;
+  display: block;
+  font-weight: 400;
+}
+.sec-offers__offer__price-un {
+  font-size: 8rem;
+  font-weight: 700;
+  line-height: 1;
+  position: relative;
+}
+.sec-offers__offer__price-un small {
+  position: absolute;
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 400;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+.sec-offers__offer__lst li {
+  border-top: 2px dashed #9F9F9F;
+  font-weight: 700;
+}
+.sec-offers__offer__lst li span {
+  color: #043418;
+}
+.sec-offers__offer__lst li:last-child {
+  border-bottom: 2px dashed #9F9F9F;
+}
+.sec-offers__offer__btn {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #fff;
+  border: 0;
+}
+
+.sec-guarantee {
+  background-color: #84bc2c;
+}
+@media (min-width: 768px) {
+  .sec-guarantee__content {
+    border-radius: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .sec-guarantee__content__seal {
+    margin-top: -100px;
+  }
+}
+.sec-guarantee__content__title {
+  font-weight: 700;
+  font-size: 3.6rem;
+}
+.sec-guarantee__content__title span {
+  font-size: 3.6rem;
+  color: #043418;
+}
+.sec-guarantee__content__description {
+  font-size: 2.2rem;
+}
+
+.sec-faq {
+  background-color: #84bc2c;
+}
+.sec-faq__title {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .sec-faq__title {
+    font-size: 3.4rem;
+  }
+}
+
+.sec-refs {
+  background-color: #f9f9f9;
+}
+.sec-refs__title {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .sec-refs__title {
+    font-size: 3.4rem;
+  }
+}
+.sec-refs__lst {
+  list-style-position: inside;
+}
+@media (max-width: 768px) {
+  .sec-refs__lst:first-child {
+    margin-bottom: 0;
+  }
+}
+
+.footer {
+  background-color: #043418;
+}
+.footer__lst li::after {
+  content: "|";
+  color: #fff;
+  margin-right: 15px;
+  margin-left: 10px;
+}
+.footer__lst li:last-child::after {
+  content: "";
+}
+
+/*# sourceMappingURL=custom.css.map */

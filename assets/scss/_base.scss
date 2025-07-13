@@ -1,0 +1,32 @@
+$xs: 0;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+
+$nl-green: #8c991b;
+$nl-green-alt: #84bc2c;
+$nl-dark-green: #043418;
+$white: #fff;
+$black: #000;
+
+:root {
+	font-size: 62.5%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.6rem;
+}
+
+[hidden] {
+    display: block !important;
+}
+

@@ -1,0 +1,257 @@
+@use "_base" as *;
+
+.sec-video {
+    background-color: $nl-green-alt;
+    
+    @media (min-width: $md) {
+        min-height: 100vh;
+    }
+
+    &__title {
+        background-color: rgba($black, .25);
+        font-size: 2.2rem;
+        font-weight: 700;
+
+        @media (min-width: $md) {
+            font-size: 3.4rem;
+        }
+    }
+}
+
+.sec-counter {
+    background-color: $nl-dark-green;
+    position: relative;
+
+    &::before{
+        content: "";
+        display: block;
+        background-color: $nl-dark-green;
+        border: 3px solid $nl-dark-green;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        bottom: -40px;
+        left: 50%;
+        right: 50%;
+        margin: auto;
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    &__title {
+        font-size: 2.2rem;
+        font-weight: 700;
+
+        @media (min-width: $md) {
+            font-size: 3.4rem;
+        }
+
+        span {
+            font-size: 2.2rem;
+            color: $nl-green;
+
+            @media (min-width: $md) {
+                font-size: 3.4rem;
+            }
+        }
+    }
+
+    &__timer {
+        font-size: 3.6rem;
+        font-weight: 700;
+        background-color: rgba($black, .2);
+        padding: 2.5px 25px 7.5px;
+        display: inline-block;
+        border-radius: 10px;
+
+        @media (min-width: $md) {
+            font-size: 7.2rem;
+            padding: 5px 50px 15px;
+        }
+    }
+}
+
+.sec-offers {
+    background-color: #f0f0f0;
+
+    &__offer {
+        > li {
+            background-color: $white;
+            border: 2px solid #9F9F9F;
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 1px 1px 10px #9F9F9F;
+
+            &.best {
+                border-color: $nl-dark-green;
+                background-color: $nl-dark-green;
+
+                .sec-offers__offer__title {
+                    background-color: $white;
+                    color: $nl-dark-green;
+                    font-weight: 700;
+                }
+
+                .sec-offers__offer__price-un {
+                    color: $white;
+                }
+
+                .sec-offers__offer__lst {
+                    li {
+                        border-color: $white;
+                        color: $white;
+
+                        span {
+                            color: $white;
+                        }
+                    }
+                }
+
+                .sec-offers__offer__btn {
+                    background-color: $nl-green-alt;
+                }
+            }
+        }
+
+        &__title {
+            font-size: 2.4rem;
+            font-weight: 400;
+            background-color: #9F9F9F;
+
+           span {
+            font-size: 1.6rem;
+            display: block;
+            font-weight: 400;
+           }
+        }
+
+        &__price-un {
+            font-size: 8.0rem;
+            font-weight: 700;
+            line-height: 1;
+            position: relative;
+
+            small {
+                position: absolute;
+                display: block;
+                font-size: 1.6rem;
+                font-weight: 400;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                margin: auto;
+            }
+        }
+
+        &__lst {
+            li {
+                border-top: 2px dashed #9F9F9F;
+                font-weight: 700;
+
+                span {
+                    color: $nl-dark-green;
+                }
+
+                &:last-child {
+                    border-bottom: 2px dashed #9F9F9F;
+                }
+            }
+        }
+
+        &__btn {
+            font-size: 2.4rem;
+            font-weight: 700;
+            color: $white;
+            border: 0;
+        }
+        
+    }
+}
+
+.sec-guarantee {
+    background-color: $nl-green-alt;
+
+    &__content {
+        
+        @media (min-width: $md) {
+            border-radius: 20px;
+        }
+
+        &__seal {
+            
+            @media (min-width: $md) {
+                margin-top: -100px;
+            }
+        }
+
+        &__title {
+            font-weight: 700;
+            font-size: 3.6rem;
+
+            span {
+                font-size: 3.6rem;
+                color: $nl-dark-green;
+            }
+        }
+
+        &__description {
+            font-size: 2.2rem;
+        }
+    }
+}
+
+.sec-faq {
+    background-color: $nl-green-alt;
+
+    &__title {
+        font-size: 2.2rem;
+        font-weight: 700;
+
+        @media (min-width: $md) {
+            font-size: 3.4rem;
+        }
+    }
+} 
+
+.sec-refs {
+    background-color: #f9f9f9;
+    &__title {
+        font-size: 2.2rem;
+        font-weight: 700;
+
+        @media (min-width: $md) {
+            font-size: 3.4rem;
+        }
+    }
+
+    &__lst {
+        list-style-position: inside;
+
+        &:first-child {
+            @media (max-width: $md) {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.footer {
+    background-color: $nl-dark-green;
+
+    &__lst {
+        li {
+            &::after {
+                content: "|";
+                color: $white;
+                margin-right: 15px;
+                margin-left: 10px;
+            }
+
+            &:last-child {
+                &::after {
+                    content: "";
+                }
+            }
+        }
+        
+    }
+}
