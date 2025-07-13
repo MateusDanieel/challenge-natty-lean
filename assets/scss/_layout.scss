@@ -1,6 +1,6 @@
 @use "_base" as *;
 
-#pgHome {
+body#pgHome {
     .sec-video {
         background-color: $nl-green-alt;
         
@@ -307,6 +307,16 @@
     }
 }
 
-#pgDetails {
-    
+body#pgDetails {
+    background-color: #FAFAFA;
+
+    .sec-tks {
+        &__title {
+            font-size: 4.8rem;
+
+            span {
+                font-size: 4.8rem;
+            }
+        }
+    }
 }
