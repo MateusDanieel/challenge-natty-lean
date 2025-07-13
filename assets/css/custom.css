@@ -281,10 +281,44 @@ body#pgDetails {
   background-color: #FAFAFA;
 }
 body#pgDetails .sec-tks__title {
-  font-size: 4.8rem;
+  font-size: 5.6rem;
+  font-weight: 700;
 }
 body#pgDetails .sec-tks__title span {
+  font-size: 5.6rem;
+  color: #84bc2c;
+  font-weight: 700;
+}
+body#pgDetails .sec-product .table tr td {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+body#pgDetails .sec-product .table tr td span {
+  font-size: 3.2rem;
+}
+body#pgDetails .sec-infos p, body#pgDetails .sec-infos ul li, body#pgDetails .sec-infos span, body#pgDetails .sec-infos a {
+  font-size: 2.4rem;
+}
+body#pgDetails .sec-infos ul {
+  list-style-position: inside;
+}
+body#pgDetails .sec-bonus {
+  background-color: #84bc2c;
+}
+body#pgDetails .sec-bonus__title {
+  font-weight: 700;
   font-size: 4.8rem;
+}
+body#pgDetails .sec-bonus__title span {
+  font-size: 4.8rem;
+  color: #043418;
+}
+body#pgDetails .sec-bonus__description {
+  font-size: 3.6rem;
+}
+body#pgDetails .sec-bonus__description span {
+  font-size: 3.6rem;
+  font-style: italic;
 }
 
 /*# sourceMappingURL=custom.css.map */
